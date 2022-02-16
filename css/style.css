@@ -1,0 +1,227 @@
+@import "null.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
+
+body {
+	background: url(../img/sunrise-1030593_960_720.jpg);
+}
+.container {
+	max-width: 100%;
+	min-height: 100%;
+	font-size: 16px;
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+
+.header {
+	max-width: 810px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0 auto;
+}
+
+.header h1 {
+	margin: 40px 0 60px 0;
+	font-size: 50px;
+	font-weight: 900;
+	color: blue;
+}
+
+.block {
+	max-width: 810px;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+.block li {
+	text-transform: uppercase;
+	margin: 0 0 5px 0;
+}
+
+.block li:hover:first-of-type {
+	color: red;
+	font-weight: 600;
+}
+
+.block li::before {
+	content: "";
+	width: 20px;
+	min-height: 25px;
+	display: inline-block;
+
+	background: url(../img/check.svg) 0 8px / 18px no-repeat;
+}
+
+.block li:hover:nth-child(2) {
+	color: rgb(45, 45, 199);
+	font-weight: 600;
+}
+
+.block li:hover:nth-child(3) {
+	color: rgb(13, 136, 44);
+	font-weight: 600;
+}
+
+.block li:hover:last-of-type {
+	color: fuchsia;
+	font-weight: 600;
+}
+
+.text {
+	max-width: 400px;
+	min-height: 200px;
+	margin: 40px 0 50px 0;
+	border: 5px solid green;
+	border-radius: 20px 5px 10px 15px;
+	box-shadow: 3px 5px 6px 8px greenyellow;
+}
+
+.text p::first-line {
+	text-transform: uppercase;
+	color: crimson;
+}
+
+.text:focus p {
+	border: 5px solid fuchsia;
+	box-shadow: 4px 6px 7px 3px fuchsia;
+}
+
+.text p {
+	padding: 15px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	border: 3px solid yellow;
+	border-radius: 40%;
+}
+
+.block-one {
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	margin: 50px 0 50px 0;
+	margin: 0 0 50px 0;
+}
+
+.block-one span {
+	padding: 10px;
+	border: 1px solid red;
+	border-radius: 15px;
+	background: indianred;
+}
+.block-one a {
+	display: inline-block;
+	color: rgb(224, 224, 224);
+}
+
+.block-one span:active {
+	box-shadow: 0 0px 0 0 rgb(139, 8, 247), inset 0 0px 5px 0 rgb(7, 30, 136);
+}
+
+.block-one span:first-of-type:hover {
+	background: blueviolet;
+	border: 1px solid blueviolet;
+	text-transform: uppercase;
+}
+
+.block-one span:last-of-type:hover {
+	background: teal;
+	border: 1px solid teal;
+	text-transform: uppercase;
+}
+
+.gem {
+	color: rgb(0, 26, 255);
+	font-weight: 700;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	font-size: 35px;
+	margin: 0 0 50px 0;
+}
+
+.gem::after {
+	margin: 0 auto;
+	content: "";
+	display: block;
+	height: 5px;
+	width: 30%;
+	background-color: black;
+}
+
+.footer {
+	max-width: 810px;
+	margin: 0 auto;
+}
+
+.game {
+	font-weight: 600;
+	background: url(../img/honeycomb-34984_960_720.png);
+	color: rgb(20, 23, 231);
+	cursor: pointer;
+	width: 810px;
+	margin: 0 auto;
+	font-size: 16px;
+	margin: 0 0 60px 0;
+	border: 5px solid blueviolet;
+	box-shadow: 3px 4px 4px 5px navajowhite;
+}
+
+.game li {
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.game li::after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	min-height: 20px;
+	margin: 0 0 0 10px;
+	background: url(../img/eclipse_weather_sun_moon_stars_icon_194179.svg) 0 5px / 16px no-repeat;
+}
+
+.game li:first-of-type:hover {
+	color: burlywood;
+}
+
+.game li:nth-child(2):hover {
+	color: deeppink;
+}
+
+.game li:nth-child(3):hover {
+	color: forestgreen;
+}
+
+.game li:nth-child(4):hover {
+	color: brown;
+}
+
+.game li:nth-child(5):hover {
+	color: lime;
+}
+
+.game li:nth-child(6):hover {
+	color: teal;
+}
+
+.game li:last-of-type:hover {
+	color: rgb(181, 6, 187);
+}
+
+.end {
+	width: 150px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 36px;
+	border: 1px solid orangered;
+	border-radius: 20px;
+	background: orangered;
+	color: #fff;
+	padding: 5px;
+}
+
+.end:hover {
+	background: rgb(168, 30, 5);
+}
